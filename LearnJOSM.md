@@ -6,5 +6,5 @@
 3.  Update Plug-ins and core as recommended.
 
   Look for a "You should update" message when opening JOSM.  
-  In this case, the current version is out-of-date when compared with the latest stable release.
+  In this case, the current version (15937) is out-of-date when compared with the latest stable release (16239).
   ![You should Update Message](YouShouldUpdate.jpg)  
