@@ -7,4 +7,4 @@
 
   Look for a "You should update" message when opening JOSM.  
   In this case, the current version is out-of-date when compared with the latest stable release.
-  ![You should Update Message](C:\Users\dave\Documents\Projects\OSM\Learning_JOSM\YouShouldUpdate.jpg)  
+  ![You should Update Message](YouShouldUpdate.jpg)  
