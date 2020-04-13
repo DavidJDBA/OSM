@@ -1,21 +1,22 @@
 # Using the JOSM editor
 ### by David Jenne
 ## Getting Started
+This document is for a Microsoft Windows installation.  Key mappings and mouse clicks will differ on Apple Macintosh platforms.
 #### Installation
 1.  An OpenStreetMap Logon is required for editing maps.  If you do not have an account, go to [OpenStreetMap](https://www.openstreetmap.org/user/new) and sign up.
-2.  Download and install JOSM.  For installation go to [JOSM](https://josm.openstreetmap.de/).
+2.  Download and install JOSM.  For installation packages go to [JOSM Install](https://josm.openstreetmap.de/).
 3.  Update Plug-ins and core as recommended.
 
   Look for a "You should update" message when opening JOSM.  
   In this example, the current version (15937) is out-of-date when compared with the latest stable release (16239).
   ![You should Update Message](YouShouldUpdate.jpg)  
 
-  A Windows Installer and a Mac Package should be available for the installation and updates.  Update Plugins if this appears:  
+  A Windows Installer and a Mac Package should be available for the installation and updates.  Updating Plugins is recommended if this message appears:  
   ![Update Plugins](PluginUpdate.jpg)
 
 #### Learning JOSM
 
-This document gives some examples from Weld County, Colorado.  There are plenty of other areas in need of additional entries or fixes.  For more information about using JOSM and specific instructions, see the [JOSM Guide](https://wiki.openstreetmap.org/wiki/JOSM/Guide).
+This document gives some examples from rural areas in Weld County, Colorado.  There are plenty of other areas in need of additional entries or fixes.  For more information about using JOSM and specific instructions, see the [JOSM Guide](https://wiki.openstreetmap.org/wiki/JOSM/Guide).
 
 Another good basic tutorial is at [Getting Started With JOSM](https://learnosm.org/en/josm/start-josm/).
 
@@ -32,11 +33,21 @@ Another good basic tutorial is at [Getting Started With JOSM](https://learnosm.o
   * *With multiple users practicing this at once, please select different locations.*
   * JOSM uses the right mouse button for navigation and the left for selecting and/or editing.
 
+  * Locations in need of some work (all within the area shown below) include:
+    * 40.4716, -104.5267
+    * 40.4900, -104.5079
+    * 40.5154, -104.5172
+    * 40.5234, -104.5122
+    * 40.5152, -104.5077
+    * 40.4936, -104.6400
+
+  or just about anywhere in rural Weld County or other counties throughout the country.  Using a zoom level of 50-100 to start should reveal several roads, buildings and waterways in need of mapping or repair.
+
   ![Download](WeldDownload.jpg)
 
   Use the left mouse button to draw a box covering the area chosen for editing.  Press the "Download" button.  If the area is too large a message will appear; in that case draw a smaller box.
 
-  Use the **_Imagery_** menu item to download background imagery.  In much of Colorado, Bing seems to have the most up-to-date imagery while ESRI Clarity (Beta) shows a large amount of detail.  Another option is to use USGS maps.  This is good for special purposes, such as verifying tags, but is generally not the best for tracing.
+  Use the **_Imagery_** menu item to download background imagery.  In much of Colorado, **Bing** seems to have the most up-to-date imagery while **ESRI Clarity (Beta)** shows a large amount of detail.  Another option is to use **USGS maps**.  This is good for special purposes, such as verifying tags, but is generally not the best for tracing.
 
   ![JOSM Startup](JOSMStartup.jpg)
 
@@ -51,7 +62,7 @@ Another good basic tutorial is at [Getting Started With JOSM](https://learnosm.o
 
 #### Selection
 
-  Unlike the ID editor, which has separate Point, Line and Area drawing tools and for selection, JOSM has only two such options, adding (or editing) and selection.  These can be activated with the **_S_** key for selection and the **_A_** key for adding.  There are also tool  buttons for these.
+  Unlike the ID editor, which has separate Point, Line and Area drawing tools and for selection, JOSM has only two such options, adding and selection.  These can be activated with the **_S_** key for selection and the **_A_** key for adding.  There are also tool  buttons for these.
 
   ![SelectAdd](SelectAdd.jpg)
 
@@ -78,7 +89,11 @@ Begin editing by pressing the **_A_** key or use the **_Draw Nodes_** ![DrawNode
 
 Draw new ways or linear features beginning with a left click and clicking again where the way turns or bends.  If a node is currently selected, the drawing will start at that point.  Press the esc key if it's an incorrect starting point or you do not want to include it in your new line.  Double click to complete drawing. If the way starts at the terminal node of another way, it will extend that way.  If that is not desired, start a new way and later join to the old node.  
 
-To add a closed area (e.g. a building or parking lot), simply draw a way or line and finish at the starting point. Press the **_Q_** key to square the sides.  Here we have added a house and then pressed the Add button in order to tag the new feature.
+To add a closed area (e.g. a building or parking lot), simply draw a way or line and finish at the starting point. Press the **_Q_** key to square the sides.  Here we have added a house and then pressed the Add button in order to tag the new feature.  The building tool can draw a rectangular structure and tag it as a building.  ![Building Tool](BldgTool.jpg)
+
+To undo any operation, use **_Ctrl-Z_**.
+
+
 ![Example 2C](Example2C.jpg)
 
 The property at the intersection is missing some service roads, and several of the other roads are misaligned.  To align the roads, select the individual nodes and drag them to the proper position.   Be careful!  If the entire way is selected (highlighted in red), it will be moved.  There are handles (+ signs) between nodes on each way (if zoomed in enough). Grabbing and moving one of these will create a brand new node at its new location.
@@ -174,3 +189,18 @@ The new islands should be added to the river area multipolygon relation with an 
 ![SouthPlatte5](southPlatte5.jpg)
 
 Upload or discard changes, or save them in a file for later editing, and we're done!
+
+## Keyboard Shortcuts ##
+
+Task   | Toolbar | Keyboard | Notes
+------ | ------- | -------- | -----
+Download | ![](Download.jpg) | Ctrl-Shift-Down |
+Add | ![](DrawNodes.jpg) | A |
+Select | ![](Select.jpg) | S |
+Split a Way | ![](Split.jpg) | P | Select a way and a node.  Two nodes required for a circular way.
+Combine Ways | ![](CombineWays.jpg) | C | Ways must share a common node.
+Reverse Direction of a Way | ![](Reverse.jpg) | R |
+Upload Changes | ![](Upload.jpg) | Ctrl-Shift-Up |
+Undo | ![](Undo.jpg) | Ctrl-Z |
+Open File | ![](Open.jpg) | Ctrl+O |
+Save Data | ![](Save.jpg) | Ctrl+S |
