@@ -210,6 +210,7 @@ Task   | Toolbar | Keyboard | Notes
 Download | ![](Download.jpg) | Ctrl-Shift-Down |
 Add | ![](DrawNodes.jpg) | A |
 Select | ![](Select.jpg) | S |
+Buildings Tool | ![](BuildingsTool.jpg) | B | Requires buildings plugin.  Press and hold Shift-left click to anchor a second corner if necessary.  Alt-Z for circular outlines, alt-R for rectangular.
 Split a Way | ![](Split.jpg) | P | Select a way and a node.  Two nodes required for a circular way.
 Combine Ways | ![](CombineWays.jpg) | C | Ways must share a common node.
 Reverse Direction of a Way | ![](Reverse.jpg) | R |
