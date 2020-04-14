@@ -11,8 +11,18 @@ This document is for a Microsoft Windows installation.  Key mappings and mouse c
   In this example, the current version (15937) is out-of-date when compared with the latest stable release (16239).
   ![You should Update Message](YouShouldUpdate.jpg)  
 
-  A Windows Installer and a Mac Package should be available for the installation and updates.  Updating Plugins is recommended if this message appears:  
+  A Windows Installer and a Mac Package should be available for the installation and updates.  
+
+#### Plugins
+
+  Updating Plugins is recommended if this message appears:  
   ![Update Plugins](PluginUpdate.jpg)
+
+  Plugins available and installed are listed under **_Edit->Preferences_**. The electrical outlet tool will display these and can be used to install additional plugins.
+  ![Plugins](Plugins.jpg)
+
+  The plugins I use include **buildings** and **terracer**.
+
 
 #### Learning JOSM
 
@@ -89,7 +99,10 @@ Begin editing by pressing the **_A_** key or use the **_Draw Nodes_** ![DrawNode
 
 Draw new ways or linear features beginning with a left click and clicking again where the way turns or bends.  If a node is currently selected, the drawing will start at that point.  Press the esc key if it's an incorrect starting point or you do not want to include it in your new line.  Double click to complete drawing. If the way starts at the terminal node of another way, it will extend that way.  If that is not desired, start a new way and later join to the old node.  
 
-To add a closed area (e.g. a building or parking lot), simply draw a way or line and finish at the starting point. Press the **_Q_** key to square the sides.  Here we have added a house and then pressed the Add button in order to tag the new feature.  The building tool can draw a rectangular structure and tag it as a building.  ![Building Tool](BldgTool.jpg)
+To add a closed area (e.g. a building or parking lot), simply draw a way or line and finish at the starting point. Press the **_Q_** key to square the sides.  Here we have added a house and then pressed the Add button in order to tag the new feature.  The buildings tool (**_B_** key) can draw a rectangular structure and tag it as a building.  ![Building Tool](BldgTool.jpg)
+
+See [Buildings Tools](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/BuildingsTools) for more information.
+
 
 To undo any operation, use **_Ctrl-Z_**.
 
