@@ -1,5 +1,5 @@
 # Using and Contributing to Open Historical Map
-NOTE:  This document was prepared for the Maptime MileHigh session, April 26, 2022.  The tasks included herein may have already been completed.  But Open Historical Map (OHM) has other very similar needs.  This can be a guide to fulfilling those needs. - _David A. Jenne_
+NOTE:  This document was prepared for the Maptime MileHigh session, April 26, 2022.  The tasks included herein may have already been completed.  Open Historical Map (OHM) has other similar needs; i.e., adding and tagging historic buildings, roads and other features.  Hopefully, this document can be used as a guide in fulfilling some of those needs. - _David A. Jenne_
 
 ## Online Resources
 
@@ -10,22 +10,21 @@ NOTE:  This document was prepared for the Maptime MileHigh session, April 26, 20
 | OSM Wiki Page       | https://wiki.openstreetmap.org/wiki/Open_Historical_Map | Links to other info |
 | Live Streams        | https://www.twitch.tv/nfgusedautoparts | Links to Other OHM info      |
 | Slack Channel       | OpenStreetMap workspace                        | #openhistoricalmap channel |
+| EDTF Date Format    | https://www.loc.gov/standards/datetime/        | Use date_edtf=... as a tag.  Useful for recording date ranges or unknown or imprecise dates. |
 
 ### A Few Historical Maps and Documents
 | Name                | Where                                                   |
 |---------------------|---------------------------------------------------------|
 | USGS Topo Viewer    | https://ngmdb.usgs.gov/topoview/viewer/#4/39.98/-100.06 |
 | Library of Congress | https://www.loc.gov/                                    |
-| Wyoming State rRchives | https://wyoarchives.wyo.gov/index.php/find-it-in-the-archives/maps |
-|
-
-
-
-
+| Wyoming State Archives | https://wyoarchives.wyo.gov/index.php/find-it-in-the-archives/maps |
+| Grand Teton Park History | https://www.nps.gov/grte/learn/historyculture/cultural.htm |
+| Yellowstone Park History | https://www.nps.gov/yell/learn/historyculture/index.htm |
+| Culpin, Mary Shivers, 1994, History of the Construction of the Road System in Yellowstone National Park, 1872-1966:  Historic Resource Study, Volume I | https://www.nps.gov/parkhistory/online_books/yell_roads/index.htm |
 
 
 ## Viewing the Slippy Map
-The OHM user interfaces are basically the same as in OpenStreetMap (OSM).  By default, when connecting to https://openhistoricalmap.org a map of the world as it was 1900 is presented. Zoom in and out or pan the map to view different locations.  The main difference with OSM is the presence of a time slider in the lower right corner.  The control can be slid back and forth to display particular years or the arrows can be used to automate the display.  The bounding years or current year can be adjusted or entered manually.  The toolbar on the right side can be used to zoom the display, show different layers or provide detailed information with the query tool.
+The OHM user tools are basically the same as in OpenStreetMap (OSM).  By default, when connecting to https://openhistoricalmap.org a map of the world as it was 1900 is presented. Zoom in and out or pan the map to view different locations.  The main difference with OSM is the presence of a time slider in the lower right corner.  The control can be slid back and forth to display particular years or the arrows can be used to automate the display.  The bounding years or current year can be adjusted or entered manually.  The toolbar on the right side can be used to zoom the display, show different layers or provide detailed information with the query tool.
 
 ![OHM Time slider and query tool](OHM_tools.jpg)
 
@@ -55,7 +54,10 @@ Save the JOSM preference settings.  Select an area of interest that includes all
 ![Mammoth-Gardner area download map](Yellowstone_AOI.jpg)
 _Area of interest for downloading to JOSM.  This area includes Gardner, Montana, Mammoth in Yellowstone and the Gardner River._
 
-Fort Yellowstone was an army base established for the management of Yellowstone National Park.  Construction of permanent buildings began in 1891 and the first building constructed was the Guard House.  This building is currently selected in the JOSM screenshot below.  See https://en.wikipedia.org/wiki/Fort_Yellowstone.  
+Fort Yellowstone was an army base established for the management of Yellowstone National Park.  Construction of permanent buildings began in 1891 and the first building constructed was the Guard House.  This building is currently selected in the JOSM screenshot below.  See https://en.wikipedia.org/wiki/Fort_Yellowstone.  Fort Yellowstone structures are shown in this map:
+
+![Fort Yellowstone Map](FortYellowstoneMap-2.2.jpg)
+_Fort Yellostone showing locations of the Original Guardhouse and the Engineer's Office.  https://upload.wikimedia.org/wikipedia/commons/4/42/FortYellowstoneMap-2.2.jpg  Fort Yellowstone Historic District Guide-The Army Years 1886-1918, published by the National Park Service, April 2008Derivative work by Mike Cline, Public domain, via Wikimedia Commons._
 
 Zoom in JOSM or ID to Mammoth (just south of the Gardner, Montana a few miles into Yellowstone National Park).  The guard house is the building at the southwest corner of the fort, selected in this image.  In Mapbox Satellite imagery, the old fort buildings have red roofs.  
 
@@ -66,14 +68,14 @@ Use the line drawing tool (keyboard A) and draw the outline of an additional bui
 
 One additional building that could be added is the Engineer's Office.  This was the second stone building at Fort Yellowstone and was erected in 1903.  This can be added to OHM.  This can be tagged with building=office.  
 
-A picture of the Orignal Guardhouse is in Wikimedia Commons and has been added to the Open Historical Map entry.  It is available under a Creative Commons license.  Enter the following keys:values.  image:1=https://upload.wikimedia.org/wikipedia/commons/7/75/OriginalFortYellowstoneGuardhouseDec2012.JPG.  Also, image:1:caption="Original Fort Yellowstone Guardhouse, constructed in 1891, now a private residence, image:1:date=2012-12, and image:1:license = "Creative Commons Attribution-Share Alike 3.0 Unsupported".  
-image:1:attribution = "Mike Cline, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons".
+A picture of the Engineer's Office is in Wikimedia Commons and can been added to the Open Historical Map entry.  It is available under a Creative Commons license.  Enter the following keys:values.  image:1=https://upload.wikimedia.org/wikipedia/commons/7/77/Fort_Yellowstone_Engineer_Office.JPG.  Also, image:1:caption="Engineer's Office, constructed in 1903, image:1:date=2012-12, and image:1:license = "Creative Commons Attribution-Share Alike 3.0 Unported license."  
+image:1:attribution = "Acroterion, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons".
 
-There are other Fort Yellowstone Buildings which can be added to OHM, including the Engineer's Office.  An appropriate Wikimedia Commons image is https://commons.wikimedia.org/wiki/File:Fort_Yellowstone_Engineer_Office.JPG.  After adding or editing map objects, check the slippy map to see how these new additions render through time.  Use the inspector to display additional information.
+TAfter adding or editing map objects, check the slippy map to see how these new additions render through time.  Use the inspector to display additional information.
 
-## Mapping Old Highways Using Map Warper
+## Follow Along:  Mapping Old Highways Using Map Warper
 
-Between Mammoth and Swan Lake, the routing of the Grand Loop Road has changed several times.  Using Old maps and descriptions from the National Park Service document *The History of the Construction of the Road System in Yellowstone National Park, 1872-1966: Historic Resource Study, Volume 1" by Mary Shivers Culpin, 1994, https://www.nps.gov/parkhistory/online_books/yell_roads/index.htm much of the park's road-building history can be examined and much of that documented on the OHM map.
+Between Mammoth and Swan Lake, the routing of the Grand Loop Road has changed several times.  Using Old maps and descriptions from the National Park Service document *The History of the Construction of the Road System in Yellowstone National Park, 1872-1966: Historic Resource Study, Volume 1" by Mary Shivers Culpin, 1994, (see table of references above) much of the park's road-building history can be examined and much of that documented on the OHM map.
 
 ### Load map into Map Warper
 Navigate to the USGS Website to Products > Topographic Maps.  This opens the topoViewer download tool.  Zoom to Yellowstone National Park, https://ngmdb.usgs.gov/topoview/viewer/#12/44.9348/-110.7662, and place a pin at Mammoth, Yellowstone National Park, Wyoming.  A list of maps and their dates that cover this area appears.  These maps can be viewed from your browser or downloaded.  Download the Gallatin 1911 map (GeoTiff file WY_Gallatin_342460_1911_125000_geo.tif).
@@ -89,7 +91,7 @@ In JOSM, under preferences add the URL string to the imagery tab and give it an 
 
 ### Some History of Transportation Around Mammoth
 
-In 1878, Philetus W. Norris, second superintendent of Yellowstone, built a new road from Mammoth south to the Geyser Basins.  This route was laid out when Norris surveyed the area from atop Sepulcher Mountain.  He also created a road around Bunsen Peak in 1879--the first planned secondary road in the park.  From Carpenter's book and early maps of Yellowstone, we can derive a timeline.
+In 1878, Philetus W. Norris, second superintendent of Yellowstone, built a new road from Mammoth south to the Geyser Basins.  This route was laid out when Norris surveyed the area from atop Sepulcher Mountain.  He also created a road around Bunsen Peak in 1879--the first planned secondary road in the park.  From Culpin's book and early maps of Yellowstone, we can derive a timeline.
 
 * 1878:  Road south of Mammoth over Snowy Pass.
 * 1879:  Road around Bunsen Peak.
@@ -97,7 +99,7 @@ In 1878, Philetus W. Norris, second superintendent of Yellowstone, built a new r
 * 1883:  Large hotel opened in Mammoth and UP branch line built from Livingston, Montana along the Yellowstone River to a point 8 miles from Mammoth.  160 miles of roads within Yellowstone National Park.  Park maintenance and construction turned over to the U.S. Army.
 * 1885:  New road along the West Fork of the Gardner River (Glen Creek) through Golden Gate Canyon south of Mammoth.
 * 1891:  Lt. Hiram Chittenden took over responsibility for road improvement and construction.
-* 1902:  Reconstruction of road through Golden Gate Canyon.
+* 1899-1902:  Reconstruction of road through Golden Gate Canyon.
 
 ![1880s and Present-day Road Through Golden Gate Canyon](GoldenGateCanyon.jpg)
 
