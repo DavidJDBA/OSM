@@ -32,28 +32,20 @@ Another good basic tutorial is at [Getting Started With JOSM](https://learnosm.o
 
 ## Connecting to OpenStreetMap
 
-  With an active account, select **_Edit->Preferences_** from the menu and select the tab with the Globe.  Enter your account and password, choosing between OAuth and plain text password authentication.
+  With an active account, select **_Edit > Preferences_** from the menu and select the **OSM Server** tab.  The first checkbox under **Connection Settings** will set the connection to the default OpenStreetMap server.  To connect to Open Historical Map instead, enter https://api.openhistoricalmap.org/api.  Enter your account and password, choosing between OAuth and plain text (Basic) password authentication.
 
-  ![Password Entry](UserPassword.jpg)  
+  ![Password Entry](OSM_Server.jpg)  
 
-  Use the green download arrow to select an area for mapping.  ![Download Arrow](DownloadArrow.jpg)  
+  Use the green download arrow to select an area for mapping.  ![Download Arrow](DownloadArrow.jpg)
 
   For this tutorial:  
   * Find an area with a variety of data types (roads, buildings, natural features).
-  * *With multiple users practicing this at once, please select different locations.*
   * JOSM uses the right mouse button for navigation and the left for selecting and/or editing.
+  * An example area that has been worked but still needs additional edit is the bounding box 40.44 to 40.52 latitutde and -104.5 to -104.6 longitude.  There are unmapped buildings, driveways, farmland, etc.
 
-  * Locations in need of some work (all within the area shown below) include:
-    * 40.4716, -104.5267
-    * 40.4900, -104.5079
-    * 40.5154, -104.5172
-    * 40.5234, -104.5122
-    * 40.5152, -104.5077
-    * 40.4936, -104.6400
+  Using a zoom level of 50-100 to start should reveal several roads, buildings and waterways in need of mapping or repair.
 
-  or just about anywhere in rural Weld County or other counties throughout the country.  Using a zoom level of 50-100 to start should reveal several roads, buildings and waterways in need of mapping or repair.
-
-  ![Download](WeldDownload.jpg)
+  ![Download](OSMDownload.jpg)
 
   Use the left mouse button to draw a box covering the area chosen for editing.  Press the "Download" button.  If the area is too large a message will appear; in that case draw a smaller box.
 
@@ -72,9 +64,9 @@ Another good basic tutorial is at [Getting Started With JOSM](https://learnosm.o
 
 #### Selection
 
-  Unlike the ID editor, which has separate Point, Line and Area drawing tools and for selection, JOSM has only two such options, adding and selection.  These can be activated with the **_S_** key for selection and the **_A_** key for adding.  There are also tool  buttons for these.
+  Unlike the ID editor, which has separate Point, Line and Area drawing tools and for selection, JOSM has only one basic drawing tool for all of these, the lower of the two tools shown here.  The upper tool is used to select objects for querying or editing. These can be activated with the **_S_** key for selection and the **_A_** key for adding.
 
-  ![SelectAdd](SelectAdd.jpg)
+  ![Select Add](SelectAndAdd.jpg)
 
   For a specific location the latitude or longitude display can be left-clicked and a new location/scale entered.  ![JumpToPosition](JumpToPosition.jpg)
 
@@ -85,7 +77,7 @@ Another good basic tutorial is at [Getting Started With JOSM](https://learnosm.o
 
 #### Editing or Adding Tags
 
-  In this example, the highway value should be changed from **_residential_** to "**_unclassified_**.  A "residential" designation is reserved for roads through residential neighborhoods that may have restrictions, such as lower speed limits, unless they merit a higher level designation (e.g. tertiary).  Also, if the name, etc. has been verified in person or using some other public open source (not Google maps), the **_tiger:reviewed = no_** tag can be deleted.
+  In this example, the highway value should be changed from **_residential_** to "**_unclassified_**.  A "residential" designation is reserved for roads through residential neighborhoods that may have restrictions, such as lower speed limits, unless they merit a higher level designation (e.g. tertiary).  The **_unclassified_** designation is for minor non-residential roads used for local travel.  Also, if the name, etc. has been verified in person or using some other public open source (not Google or copyrighted maps), the **_tiger:reviewed = no_** tag can be deleted.
 
   ![Example1](CoRd388_example1.jpg)
   In the **_Tags: .../ Memberships_** window (right panel) use the **_+Add_** button for new tags, **_Edit_** to change the value of an existing tag or **_Delete_** to remove it completely.
@@ -97,14 +89,14 @@ The location at (40.4356666, -104.5099944) needs some work. Several buildings, r
 
 Begin editing by pressing the **_A_** key or use the **_Draw Nodes_** ![DrawNodes](DrawNodes.jpg) button in JOSM.  To add a single node (e.g. for a tree or other small feature), simply double click at the new location.  This will add the feature and leave it selected.  Use the **_Tags: .../ Memberships_** window to add appropriate tags and values.  
 
-Draw new ways or linear features beginning with a left click and clicking again where the way turns or bends.  If a node is currently selected, the drawing will start at that point.  Press the esc key if it's an incorrect starting point or you do not want to include it in your new line.  Double click to complete drawing. If the way starts at the terminal node of another way, it will extend that way.  If that is not desired, start a new way and later join to the old node.  
+Draw new ways or linear features beginning with a left click and clicking again where the way turns or ends.  If a node is currently selected, the drawing will start at that point.  Press the esc key if it's an incorrect starting point or you do not want to include it in your new line.  Double click to complete drawing. If the way starts at the terminal node of another way, it will extend that way.  If that is not desired, start a new way and later join to the old node.  
 
 To add a closed area (e.g. a building or parking lot), simply draw a way or line and finish at the starting point. Press the **_Q_** key to square the sides.  Here we have added a house and then pressed the Add button in order to tag the new feature.  The buildings tool (**_B_** key) can draw a rectangular structure and tag it as a building.  ![Building Tool](BldgTool.jpg)
 
 See [Buildings Tools](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/BuildingsTools) for more information.
 
 
-To undo any operation, use **_Ctrl-Z_**.
+To undo any operation, use **_Ctrl-Z_** or the back arrow in the upper toolbar (below the menu).
 
 
 ![Example 2C](Example2C.jpg)
@@ -186,7 +178,7 @@ The edit window shows the attributes and members of the relation.  This one comp
 
 ![SouthPlatte2](SouthPlatte2.jpg)
 
-Let's edit the river bank to reflect the current state of the South Platte.  According to OSM standards, migrating sand bars should included in the water area.  Vegetation can provide a clue as to whether an island is more or less permanent.  See [Rivers](https://wiki.openstreetmap.org/wiki/Rivers) for more information.
+Let's edit the river bank to reflect the current state of the South Platte.  According to OSM standards, migrating sand bars should be included in the water area.  Vegetation can provide a clue as to whether an island is more or less permanent.  See [Rivers](https://wiki.openstreetmap.org/wiki/Rivers) for more information.
 
 The image water area covers a larger area than that shown on the map.  We can move the riverbank nodes around to more closely match.  One way to move the river area further out along the dam is to select these two nodes, the dam node after the other one and press **_M_** to merge them.  
 ![SouthPlatte3](SouthPlatte3.jpg)
@@ -209,7 +201,7 @@ Task   | Toolbar | Keyboard | Notes
 ------ | ------- | -------- | -----
 Download | ![](Download.jpg) | Ctrl-Shift-Down |
 Add | ![](DrawNodes.jpg) | A |
-Select | ![](Select.jpg) | S |
+Select | ![](SelectTool.jpg) | S | Shift-click to select multiple objects; e.g. a way and node simultaneously.
 Buildings Tool | ![](BuildingsTool.jpg) | B | Requires buildings plugin.  Press and hold Shift-left click to anchor a second corner if necessary.  Alt-Z for circular outlines, alt-R for rectangular.
 Split a Way | ![](Split.jpg) | P | Select a way and a node.  Two nodes required for a circular way.
 Combine Ways | ![](CombineWays.jpg) | C | Ways must share a common node.
@@ -218,3 +210,4 @@ Upload Changes | ![](Upload.jpg) | Ctrl-Shift-Up |
 Undo | ![](Undo.jpg) | Ctrl-Z |
 Open File | ![](Open.jpg) | Ctrl+O |
 Save Data | ![](Save.jpg) | Ctrl+S |
+Disconnect a Node from a Way | | Alt+J | Select the target way and Shift-click to select the node also. Useful if a node is common to multiple ways if editing only one of the ways.
