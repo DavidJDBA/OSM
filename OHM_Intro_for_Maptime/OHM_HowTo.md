@@ -1,6 +1,29 @@
 # Using and Contributing to Open Historical Map
 NOTE:  This document was prepared for the Maptime MileHigh session, April 26, 2022.  The tasks included herein may have already been completed.  But Open Historical Map (OHM) has other very similar needs.  This can be a guide to fulfilling those needs. - _David A. Jenne_
 
+## Online Resources
+
+### OHM information
+| What                | Where                             | Notes |
+|---------------------|-----------------------------------|-------|
+| Open Historical Map | https://www.openhistoricalmap.org | Slippy Map |
+| OSM Wiki Page       | https://wiki.openstreetmap.org/wiki/Open_Historical_Map | Links to other info |
+| Live Streams        | https://www.twitch.tv/nfgusedautoparts | Links to Other OHM info      |
+| Slack Channel       | OpenStreetMap workspace                        | #openhistoricalmap channel |
+
+### A Few Historical Maps and Documents
+| Name                | Where                                                   |
+|---------------------|---------------------------------------------------------|
+| USGS Topo Viewer    | https://ngmdb.usgs.gov/topoview/viewer/#4/39.98/-100.06 |
+| Library of Congress | https://www.loc.gov/                                    |
+| Wyoming State rRchives | https://wyoarchives.wyo.gov/index.php/find-it-in-the-archives/maps |
+|
+
+
+
+
+
+
 ## Viewing the Slippy Map
 The OHM user interfaces are basically the same as in OpenStreetMap (OSM).  By default, when connecting to https://openhistoricalmap.org a map of the world as it was 1900 is presented. Zoom in and out or pan the map to view different locations.  The main difference with OSM is the presence of a time slider in the lower right corner.  The control can be slid back and forth to display particular years or the arrows can be used to automate the display.  The bounding years or current year can be adjusted or entered manually.  The toolbar on the right side can be used to zoom the display, show different layers or provide detailed information with the query tool.
 
@@ -88,3 +111,7 @@ _Part of a 1900 U.S. Army map showing Yellowstone road construction.  Names are 
 ### Follow Along:  Map the 1878 and 1885 versions of the Grand Loop Road
 
 Use the timeline above, the 1900 U.S. Army map and historical Gallatin 30 minute quadrangle maps to add the original 1878 road through Snowy Pass to the map.  The present-day road has been mapped, but the start_date value may be incorrect.
+
+Using JOSM or ID and appropriate background images, add the 1878 route through Snowy Pass or the 1885 route above Glen Creek.  Mapbox Satellite imagery.  Adding Bunsen Peak and the road around it would also enhance the Open Historical Map.  Images helpful in this effort could include Gallatin USGS topographic maps from around the turn of the century and the current USGS map layer.
+
+![Adding the 1885 route above Glen Creek](1885_JOSM_GoldenGateCanyonRoute.jpg)
